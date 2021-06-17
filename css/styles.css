@@ -5,7 +5,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --bgc-hero-footer: #2f303a;
-  --button-secondary: #f5f4fa;
+  --button-secondary-made: #f5f4fa;
   --secondary-color-white: #ffffff;
   --background-color-body: #e5e5e5;
   --logo-color: #000000;
@@ -40,14 +40,14 @@ body {
   color: var(--secondary-color-white);
 }
 /* nav */
-.nav.maim {
+.nav-main {
   color: var(--title-text-color);
 }
-.nav.maim:hover,
-.nav.maim:focus {
+.nav-main:hover,
+.nav-main:focus {
   color: var(--accent-color);
 }
-.nav.main.current {
+.nav-main.current {
   color: var(--accent-color);
 }
 .contact-link {
@@ -58,7 +58,7 @@ body {
   color: var(--accent-color);
 }
 /* hero */
-.hero.title {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -67,11 +67,12 @@ body {
   text-transform: uppercase;
   color: var(--secondary-color-white);
 }
-.primary-background-color {
+.hero-background-color {
   background-color: var(--bgc-hero-footer);
+  text-align: center;
 }
 /* button */
-.button.primary {
+.button-primary {
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
@@ -81,23 +82,23 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
 }
-.button.primary:hover,
-.button.primary:focus {
+.button-primary:hover,
+.button-primary:focus {
   background-color: var(--button-first-accent);
 }
 /* bytton portfolio */
-.button.portfolio {
+.button-portfolio {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  background-color: var(--button-secondary);
+  background-color: var(--button-secondary-made);
   cursor: pointer;
 }
-.button.portfolio:hover,
-.button.portfolio:focus {
+.button-portfolio:hover,
+.button-portfolio:focus {
   color: var(--secondary-color-white);
   background-color: var(--accent-color);
 }
@@ -124,6 +125,9 @@ body {
   color: var(--title-text-color);
 }
 /* section team */
+.team {
+  background-color: var(--button-secondary-made);
+}
 .title-team {
   font-weight: bold;
   font-size: 36px;
@@ -152,6 +156,7 @@ body {
   font-style: normal;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  background-color: var(--bgc-hero-footer);
 }
 .footer.address {
   color: var(--secondary-color-white);
@@ -159,21 +164,25 @@ body {
 .footer.contacts {
   color: rgba(255, 255, 255, 0.6);
 }
+.footer.contacts:hover,
+.footer.contacts:focus {
+  color: var(--accent-color);
+}
 /* page portfolio */
-.title.portfolio {
+.title-portfolio {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
-.text.portfolio {
+.text-portfolio {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-/* hidden titel features */
+/* hidden titel */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -183,4 +192,11 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+/* delite style */
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
 }
